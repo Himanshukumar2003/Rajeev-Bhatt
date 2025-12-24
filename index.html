@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajeev Bhatt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="theme-icon sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="theme-icon moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="logo-icon"></div>
+                Rajeev Bhatt
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">SERVICES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">PROJECT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <button class="btn btn-download d-none d-lg-block">DOWNLOAD CV</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section  ">
+        <div class="container">
+            <img src="img/icon1.svg" alt="" class="  img-fuild  shap shap1">
+            <img src="img/square.svg" alt="" class="  img-fuild shap2  shap">
+            <div class="row align-items-end   ">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h2>HELLO</h2>
+                        <h1>I'M ANTHONY</h1>
+                        <p class="about-pera">Passionate UI/UX designer dedicated to crafting exceptional digital
+                            experiences. With a keen
+                            eye for detail and a user-centric approach, I transform ideas into intuitive and visually
+                            stunning designs.</p>
+
+                        <div class="stats">
+                            <div class="stats-item">
+                                <div class="stats-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="#ff8c00" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="stats-number">10+</div>
+                                <div class="stats-label">Years Experience</div>
+                            </div>
+
+                            <div class="stats-item">
+                                <div class="stats-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="#ff8c00" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="stats-number">64+</div>
+                                <div class="stats-label">Completed Project</div>
+                            </div>
+
+                            <div class="stats-item">
+                                <div class="stats-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="#ff8c00" stroke-width="3">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="stats-number">151+</div>
+                                <div class="stats-label">Happy Client</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="img/about-1.png" alt="Anthony - UI/UX Designer">
+                        <div class="accent-line accent-line-1"></div>
+                        <div class="accent-line accent-line-2"></div>
+                        <div class="accent-line accent-line-3"></div>
+                        <div class="accent-line accent-line-4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="brands p-0">
+
+        <!-- Marquee Row 1 (Left → Right) -->
+        <div class="marquee marquee-left">
+            <div class="marquee-track">
+                <img src="img/logo1.png" />
+                <img src="img/logo-2.png" />
+                <img src="img/logo1.png" />
+                <img src="img/logo-2.png" /> <img src="img/logo1.png" />
+                <img src="img/logo-2.png" /> <img src="img/logo1.png" />
+                <img src="img/logo-2.png" /> <img src="img/logo1.png" />
+                <img src="img/logo-2.png" />
+                <!-- duplicate for seamless loop -->
+                <img src="img/logo1.png" />
+                <img src="img/logo-2.png" /> <img src="img/logo1.png" />
+                <img src="img/logo-2.png" />
+            </div>
+        </div>
+
+
+    </section>
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=600&h=700&fit=crop"
+                            alt="Mark Henry" class="about-main-image">
+
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-content">
+                        <h3>Hello I'm</h3>
+                        <h2>Mark Henry, Product Designer</h2>
+                        <h3 style="margin-bottom: 20px;">Based in German</h3>
+                        <p>
+                            That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not
+                            only reflects who you are and what you stand for, but words that read well and act as a
+                            catalyst for business goals.
+                        </p>
+
+                        <p>
+                            That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not
+                            only reflects who you are and what you stand for, but words that read well and act as a
+                            catalyst for business goals.
+                            That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not
+                            only reflects who you are and what you stand for, but words that read well and act as a
+                            catalyst for business goals.
+                        </p>
+                        <p>
+                            That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not
+                            only reflects who you are and what you stand for, but words that read well and act as a
+                            catalyst for business goals.
+                            That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not
+                            only reflects who you are and what you stand for, but words that read well and act as a
+                            catalyst for business goals.
+                        </p>
+
+                        <p>
+                            That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not
+                            only reflects who you are and what you stand for, but words that read well and act as a
+                            catalyst for business goals.
+                        </p>
+
+
+                        <button class="btn-download-resume">
+                            Download My Resume
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- Achievement Section -->
+    <section class="achievement-section ">
+        <div class="container">
+            <div class="row g-5  align-items-center">
+                <div class="  col-md-5">
+                    <p class="section-subtitle">Services</p>
+                    <h2 class="section-title">My specialties</h2>
+                </div>
+                <div class="col-md-7">
+                    <p>Synergistically seize front-end methods of empowerment without extensive core competencies.
+                        Progressively repurpose alternative platforms
+
+                    </p>
+                </div>
+            </div>
+            <div class="row     g-5  align-items-end">
+
+
+                <div class="col-lg-6">
+
+                    <div class="skills-grid">
+                        <div class="skill-card card-1">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="#B4B4B4" xmlns="http://www.w3.org/2000/svg">
+                                    <polygon points="12,2 22,8.5 22,15.5 12,22 2,15.5 2,8.5" />
+                                </svg>
+                            </div>
+                            <div class="skill-percentage">100%</div>
+                            <div class="skill-name">Framer</div>
+                        </div>
+                        <div class="skill-card  card-2">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="#FF7262" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" />
+                                    <path d="M2 17L12 22L22 17" />
+                                    <path d="M2 12L12 17L22 12" />
+                                </svg>
+                            </div>
+                            <div class="skill-percentage">100%</div>
+                            <div class="skill-name">Figma Design</div>
+                        </div>
+
+                        <div class="skill-card card-3">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="#FF61F6" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4" y="4" width="16" height="16" rx="2" />
+                                    <path d="M9 9H15V15H9V9Z" fill="white" />
+                                </svg>
+                            </div>
+                            <div class="skill-percentage">100%</div>
+                            <div class="skill-name">Adobe XD</div>
+                        </div>
+
+                        <div class="skill-card card-4">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="#1ABCFE" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" />
+                                </svg>
+                            </div>
+                            <div class="skill-percentage">100%</div>
+                            <div class="skill-name">Webflow</div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="content">
+
+                        <img src="img/trophy.png" id="hover-image" alt="Trophy">
+
+                        <ul class="awards-list">
+                            <li class="award-item">
+                                <div class="award-info">
+                                    <h4>Behance Site</h4>
+                                    <h3>Balance Winner</h3>
+                                </div>
+                                <span class="award-year">2015</span>
+
+
+                                <div class="award-company  fild">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M12 8v8m-4-4h8" />
+                                    </svg>
+                                    Nietzsche
+
+                                </div>
+                            </li>
+
+                            <li class="award-item">
+                                <div class="award-info">
+                                    <h4>Awwwards Site</h4>
+                                    <h3>Winner</h3>
+                                </div>
+                                <span class="award-year">2025</span>
+
+
+                                <div class="award-company  fild">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10" />
+                                    </svg>
+                                    BehaN+
+                                </div>
+
+                            </li>
+
+                            <li class="award-item">
+                                <div class="award-info">
+                                    <h4>Dribble Site</h4>
+                                    <h3>Design Awards</h3>
+                                </div>
+                                <span class="award-year">2023</span>
+
+
+                                <div class="award-company  fild">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M3 3h18v18H3z" />
+                                    </svg>
+                                    FeatherDev
+
+                                </div>
+                            </li>
+
+                            <li class="award-item">
+                                <div class="award-info">
+                                    <h4>Themeforest Site</h4>
+                                    <h3>Web Development</h3>
+                                </div>
+                                <span class="award-year">2024</span>
+                                <div class="d-flex align-items-center  fild">
+
+                                    <div class="award-company">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10" />
+                                            <path d="M12 2v20" />
+                                        </svg>
+                                        Spherule
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="project-section">
+        <div class="container">
+            <div class="row g-5  align-items-center">
+                <div class="  col-md-5">
+                    <p class="section-subtitle">Services</p>
+                    <h2 class="section-title">My specialties</h2>
+                </div>
+                <div class="col-md-7">
+                    <p>Synergistically seize front-end methods of empowerment without extensive core competencies.
+                        Progressively repurpose alternative platforms
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-card card-5">
+                        <img src="img/post_02-640x640.jpg" alt="Transparent Funding">
+                        <div class="card-overlay">
+                            <div>
+                                <span class="card-tag">local projects & initiatives</span>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-number">01/</div>
+                                <h3 class="card-title">Transparent<br>Funding</h3>
+                                <button class="card-btn">
+                                    Explore
+                                    <span class="arrow-icon">→</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-card card-6">
+                        <img src="img/post_11-640x640.jpg" alt="Inspiration & Impact">
+                        <div class="card-overlay">
+                            <div>
+                                <span class="card-tag">Explore</span>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-number">02/</div>
+                                <h3 class="card-title">Inspiration<br>& Impact</h3>
+                                <button class="card-btn">
+                                    catalyst for new ideas
+                                    <span class="arrow-icon">→</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-card card-9">
+                        <img src="img/post_12-640x640.jpg" alt="Participation & Involvement">
+                        <div class="card-overlay">
+                            <div>
+                                <span class="card-tag">democratic decision</span>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-number">03/</div>
+                                <h3 class="card-title">Participation<br>& Involvement</h3>
+                                <button class="card-btn">
+                                    Explore
+                                    <span class="arrow-icon">→</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="project-card card-8">
+                        <img src="img/blog2.png" alt="Transparent Funding">
+                        <div class="card-overlay">
+                            <div>
+                                <span class="card-tag">local projects & initiatives</span>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-number">01/</div>
+                                <h3 class="card-title">Transparent<br>Funding</h3>
+                                <button class="card-btn">
+                                    Explore
+                                    <span class="arrow-icon">→</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="row g-5  align-items-center">
+                <div class="  col-md-5">
+                    <p class="section-subtitle">Services</p>
+                    <h2 class="section-title">My specialties</h2>
+                </div>
+                <div class="col-md-7">
+                    <p>Synergistically seize front-end methods of empowerment without extensive core competencies.
+                        Progressively repurpose alternative platforms
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-8">
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="7" y1="17" x2="17" y2="7" />
+                                    <polyline points="7 7 17 7 17 17" />
+                                </svg>
+                            </div>
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="5" y="2" width="14" height="20" rx="2" />
+                                    <line x1="12" y1="18" x2="12" y2="18" />
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Mobile Apps design</h3>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="7" y1="17" x2="17" y2="7" />
+                                    <polyline points="7 7 17 7 17 17" />
+                                </svg>
+                            </div>
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" />
+                                    <path d="M9 3v18" />
+                                </svg>
+                            </div>
+                            <h3 class="service-title">UI/UX design</h3>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="7" y1="17" x2="17" y2="7" />
+                                    <polyline points="7 7 17 7 17 17" />
+                                </svg>
+                            </div>
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                                    <line x1="8" y1="21" x2="16" y2="21" />
+                                    <line x1="12" y1="17" x2="12" y2="21" />
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Website design</h3>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="7" y1="17" x2="17" y2="7" />
+                                    <polyline points="7 7 17 7 17 17" />
+                                </svg>
+                            </div>
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Webflow development</h3>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="7" y1="17" x2="17" y2="7" />
+                                    <polyline points="7 7 17 7 17 17" />
+                                </svg>
+                            </div>
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" />
+                                    <path d="M16 3v4M8 3v4" />
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Brand identity</h3>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-arrow">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="7" y1="17" x2="17" y2="7" />
+                                    <polyline points="7 7 17 7 17 17" />
+                                </svg>
+                            </div>
+                            <div class="service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="3" />
+                                    <path d="M12 1v6m0 6v6M1 12h6m6 0h6" />
+                                </svg>
+                            </div>
+                            <h3 class="service-title">Interaction design</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card-container h-100">
+                        <h5>SAY <br>HELLO!</h5>
+                        <p><a href="mailto:hello@henry.com" class="email">hello@henry.com</a></p>
+                        <a href="#" class="arrow-icon">
+                            <i class="bi bi-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <section class="blog-section">
+        <div class="container">
+            <div class="row g-5  align-items-center">
+                <div class="  col-md-5">
+                    <p class="section-subtitle">Blog</p>
+                    <h2 class="section-title">Blogs & News</h2>
+                </div>
+                <div class="col-md-7">
+                    <p>Synergistically seize front-end methods of empowerment without extensive core competencies.
+                        Progressively repurpose alternative platforms
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <div class="card-img">
+                            <img src="img/post_02-640x640.jpg" alt="" class="img-fuild">
+
+                        </div>
+                        <a href="#contact" class="cta-btn">
+                            <span>↗</span>
+                        </a>
+                        <div class="card-contanet">
+                            <span class="card-date">February 15, 2024</span>
+
+                            <h5>Designing the perfect feature comparison table
+                            </h5>
+                            <p>Everyone in my team works towards the samegoal. This enabled our teams to ship new ideas
+                                and feel more capable. Podcasting operational — change management inside of workflows.
+                                Completely synergize.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <div class="card-img">
+                            <img src="img/post_11-640x640.jpg" alt="" class="img-fuild">
+
+                        </div>
+                        <a href="#contact" class="cta-btn">
+                            <span>↗</span>
+                        </a>
+                        <div class="card-contanet">
+                            <span class="card-date">February 15, 2024</span>
+
+                            <h5>Designing the perfect feature comparison table
+                            </h5>
+                            <p>Everyone in my team works towards the samegoal. This enabled our teams to ship new ideas
+                                and feel more capable. Podcasting operational — change management inside of workflows.
+                                Completely synergize.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card">
+                        <div class="card-img">
+                            <img src="img/post_12-640x640.jpg" alt="" class="img-fuild">
+
+                        </div>
+                        <a href="#contact" class="cta-btn">
+                            <span>↗</span>
+                        </a>
+                        <div class="card-contanet">
+                            <span class="card-date">February 15, 2024</span>
+
+                            <h5>Designing the perfect feature comparison table
+                            </h5>
+                            <p>Everyone in my team works towards the samegoal. This enabled our teams to ship new ideas
+                                and feel more capable. Podcasting operational — change management inside of workflows.
+                                Completely synergize.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="cta py-5">
+        <div class="container">
+            <div class="hero-box  position-relative">
+                <div class="row  g-5">
+
+                    <div class="col-lg-6">
+                        <h1 class="hero-title p-5">
+                            Let's create the best <span>product</span><br>
+                            <span class="light-text">experience</span><br>
+                            for your project
+                        </h1>
+                    </div>
+
+                    <div class="col-lg-6 text-center d-flex justify-content-center align-items-end">
+                        <img src="img/ctaLogo.png" class="hero-img floating-img img-fluid" alt="">
+                        <a href="#contact" class="cta-btn">
+                            <span>↗</span>
+                        </a>
+                    </div>
+
+                    <!-- CTA Button -->
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <p class="footer-description">
+                            Phosflu orescently redefine cross the functional data through enabled mind share.ess
+                            products
+                        </p>
+                        <h2 class="footer-cta">
+                            Let's Chat
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </h2>
+                    </div>
+                    <div class="col-lg-3 offset-lg-1">
+                        <ul class="footer-links">
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">blog</a></li>
+                            <li><a href="#">Policy</a></li>
+                            <li><a href="#">Refund</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="footer-contact">
+                            <h4><span class="highlight">Rajeev Bhatt</span>@example.com</h4>
+                            <p>4517 Washington Ave. Manchester,<br>Kentucky 39495</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">Rajeev Bhatt © 2025, All Rights Reserved</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                            </path>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
