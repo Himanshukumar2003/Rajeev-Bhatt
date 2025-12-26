@@ -4,595 +4,363 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajeev Bhatt</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Jenny - Events That Liberate</title>
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <svg class="theme-icon sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-        <svg class="theme-icon moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
-    </button>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg">
+    <!-- Navbar -->
+    <div class="nav-section">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <div class="logo-icon"></div>
-                Rajeev Bhatt
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">SERVICES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">PROJECT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
-                </ul>
-            </div>
-            <button class="btn btn-download d-none d-lg-block">DOWNLOAD CV</button>
-        </div>
-    </nav>
+            <nav class="navbar navbar-expand-lg navbar-custom">
+                <div class="container-fluid">
 
-    <!-- Hero Section -->
-    <section class="hero-section  ">
-        <div class="container">
-            <img src="img/icon1.svg" alt="" class="  img-fuild  shap shap1">
-            <img src="img/square.svg" alt="" class="  img-fuild shap2  shap">
-            <div class="row align-items-end   ">
-                <div class="col-lg-6">
-                    <div class="hero-content">
-                        <h2>HELLO</h2>
-                        <h1>I'M ANTHONY</h1>
-                        <p class="about-pera">Passionate UI/UX designer dedicated to crafting exceptional digital
-                            experiences. With a keen
-                            eye for detail and a user-centric approach, I transform ideas into intuitive and visually
-                            stunning designs.</p>
+                    <a class="navbar-brand" href="#">
+                        <div class="logo-circle">J</div>
+                        Jenny
+                    </a>
 
-                        <div class="stats">
-                            <div class="stats-item">
-                                <div class="stats-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="#ff8c00" stroke-width="3">
-                                        <polyline points="20 6 9 17 4 12"></polyline>
-                                    </svg>
-                                </div>
-                                <div class="stats-number">10+</div>
-                                <div class="stats-label">Years Experience</div>
-                            </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        style="background-color: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2);">
+                        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+                    </button>
 
-                            <div class="stats-item">
-                                <div class="stats-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="#ff8c00" stroke-width="3">
-                                        <polyline points="20 6 9 17 4 12"></polyline>
-                                    </svg>
-                                </div>
-                                <div class="stats-number">64+</div>
-                                <div class="stats-label">Completed Project</div>
-                            </div>
-
-                            <div class="stats-item">
-                                <div class="stats-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="#ff8c00" stroke-width="3">
-                                        <polyline points="20 6 9 17 4 12"></polyline>
-                                    </svg>
-                                </div>
-                                <div class="stats-number">151+</div>
-                                <div class="stats-label">Happy Client</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="hero-image">
-                        <img src="img/about-1.png" alt="Anthony - UI/UX Designer">
-                        <div class="accent-line accent-line-1"></div>
-                        <div class="accent-line accent-line-2"></div>
-                        <div class="accent-line accent-line-3"></div>
-                        <div class="accent-line accent-line-4"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="brands p-0">
-
-        <!-- Marquee Row 1 (Left → Right) -->
-        <div class="marquee marquee-left">
-            <div class="marquee-track">
-                <img src="img/logo1.png" />
-                <img src="img/logo-2.png" />
-                <img src="img/logo1.png" />
-                <img src="img/logo-2.png" /> <img src="img/logo1.png" />
-                <img src="img/logo-2.png" /> <img src="img/logo1.png" />
-                <img src="img/logo-2.png" /> <img src="img/logo1.png" />
-                <img src="img/logo-2.png" />
-                <!-- duplicate for seamless loop -->
-                <img src="img/logo1.png" />
-                <img src="img/logo-2.png" /> <img src="img/logo1.png" />
-                <img src="img/logo-2.png" />
-            </div>
-        </div>
-
-
-    </section>
-    <section class="about-section">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-5">
-                    <div class="about-image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=600&h=700&fit=crop"
-                            alt="Mark Henry" class="about-main-image">
-
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="about-content">
-                        <h3>Hello I'm</h3>
-                        <h2>Mark Henry, Product Designer</h2>
-                        <h3 style="margin-bottom: 20px;">Based in German</h3>
-                        <p>
-                            That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not
-                            only reflects who you are and what you stand for, but words that read well and act as a
-                            catalyst for business goals.
-                        </p>
-
-                        <p>
-                            That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not
-                            only reflects who you are and what you stand for, but words that read well and act as a
-                            catalyst for business goals.
-                            That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not
-                            only reflects who you are and what you stand for, but words that read well and act as a
-                            catalyst for business goals.
-                        </p>
-                        <p>
-                            That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not
-                            only reflects who you are and what you stand for, but words that read well and act as a
-                            catalyst for business goals.
-                            That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not
-                            only reflects who you are and what you stand for, but words that read well and act as a
-                            catalyst for business goals.
-                        </p>
-
-                        <p>
-                            That is where I come in. A lover of words, a wrangler of copy. Here to create copy that not
-                            only reflects who you are and what you stand for, but words that read well and act as a
-                            catalyst for business goals.
-                        </p>
-
-
-                        <button class="btn-download-resume">
-                            Download My Resume
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="5" y1="12" x2="19" y2="12" />
-                                <polyline points="12 5 19 12 12 19" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-
-
-    <!-- Achievement Section -->
-    <section class="achievement-section ">
-        <div class="container">
-            <div class="row g-5  align-items-center">
-                <div class="  col-md-5">
-                    <p class="section-subtitle">Services</p>
-                    <h2 class="section-title">My specialties</h2>
-                </div>
-                <div class="col-md-7">
-                    <p>Synergistically seize front-end methods of empowerment without extensive core competencies.
-                        Progressively repurpose alternative platforms
-
-                    </p>
-                </div>
-            </div>
-            <div class="row     g-5  align-items-end">
-
-
-                <div class="col-lg-6">
-
-                    <div class="skills-grid">
-                        <div class="skill-card card-1">
-                            <div class="skill-icon">
-                                <svg viewBox="0 0 24 24" fill="#B4B4B4" xmlns="http://www.w3.org/2000/svg">
-                                    <polygon points="12,2 22,8.5 22,15.5 12,22 2,15.5 2,8.5" />
-                                </svg>
-                            </div>
-                            <div class="skill-percentage">100%</div>
-                            <div class="skill-name">Framer</div>
-                        </div>
-                        <div class="skill-card  card-2">
-                            <div class="skill-icon">
-                                <svg viewBox="0 0 24 24" fill="#FF7262" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L2 7L12 12L22 7L12 2Z" />
-                                    <path d="M2 17L12 22L22 17" />
-                                    <path d="M2 12L12 17L22 12" />
-                                </svg>
-                            </div>
-                            <div class="skill-percentage">100%</div>
-                            <div class="skill-name">Figma Design</div>
-                        </div>
-
-                        <div class="skill-card card-3">
-                            <div class="skill-icon">
-                                <svg viewBox="0 0 24 24" fill="#FF61F6" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="4" y="4" width="16" height="16" rx="2" />
-                                    <path d="M9 9H15V15H9V9Z" fill="white" />
-                                </svg>
-                            </div>
-                            <div class="skill-percentage">100%</div>
-                            <div class="skill-name">Adobe XD</div>
-                        </div>
-
-                        <div class="skill-card card-4">
-                            <div class="skill-icon">
-                                <svg viewBox="0 0 24 24" fill="#1ABCFE" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" />
-                                </svg>
-                            </div>
-                            <div class="skill-percentage">100%</div>
-                            <div class="skill-name">Webflow</div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-
-                    <div class="content">
-
-                        <img src="img/trophy.png" id="hover-image" alt="Trophy">
-
-                        <ul class="awards-list">
-                            <li class="award-item">
-                                <div class="award-info">
-                                    <h4>Behance Site</h4>
-                                    <h3>Balance Winner</h3>
-                                </div>
-                                <span class="award-year">2015</span>
-
-
-                                <div class="award-company  fild">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10" />
-                                        <path d="M12 8v8m-4-4h8" />
-                                    </svg>
-                                    Nietzsche
-
-                                </div>
-                            </li>
-
-                            <li class="award-item">
-                                <div class="award-info">
-                                    <h4>Awwwards Site</h4>
-                                    <h3>Winner</h3>
-                                </div>
-                                <span class="award-year">2025</span>
-
-
-                                <div class="award-company  fild">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <circle cx="12" cy="12" r="10" />
-                                    </svg>
-                                    BehaN+
-                                </div>
-
-                            </li>
-
-                            <li class="award-item">
-                                <div class="award-info">
-                                    <h4>Dribble Site</h4>
-                                    <h3>Design Awards</h3>
-                                </div>
-                                <span class="award-year">2023</span>
-
-
-                                <div class="award-company  fild">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M3 3h18v18H3z" />
-                                    </svg>
-                                    FeatherDev
-
-                                </div>
-                            </li>
-
-                            <li class="award-item">
-                                <div class="award-info">
-                                    <h4>Themeforest Site</h4>
-                                    <h3>Web Development</h3>
-                                </div>
-                                <span class="award-year">2024</span>
-                                <div class="d-flex align-items-center  fild">
-
-                                    <div class="award-company">
-                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                            <circle cx="12" cy="12" r="10" />
-                                            <path d="M12 2v20" />
-                                        </svg>
-                                        Spherule
-                                    </div>
-                                </div>
-                            </li>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
                         </ul>
                     </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- Hero Scroll Section -->
+    <div class="hero-scroll">
+        <div class="container">
+            <div class="contant">
+                <h1>Master every area <br> of your life</h1>
+                <p class="mt-4">Close the gap between where you are and where you want to be <br>with Tony Robbins'
+                    scientifically proven system.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <!-- Text content -->
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4 text-dark">The start of a bigger story</h2>
+                    <p class="fs-5 mb-4 text-black">Tony didn't come from wealth.</p>
+                    <p class="text-black">
+                        As a child he had four different fathers and an intense mother.
+                        Food was scarce. One Thanksgiving a man knocked on the door holding
+                        bags filled to the brim with groceries — an anonymous gift from
+                        someone who knew his family was struggling.
+                    </p>
+                    <p class="text-black">
+                        Tony's father at the time was immediately angered and tried to refuse
+                        the gift. But Tony was overjoyed. This was more food than they'd had
+                        in a long time.
+                    </p>
+
+                    <button class="btn btn-black">
+                        <span>Continue</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 74 74" height="34" width="34">
+                            <circle stroke-width="3" stroke="black" r="35.5" cy="37" cx="37"></circle>
+                            <path fill="black"
+                                d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z">
+                            </path>
+                        </svg>
+                    </button>
 
                 </div>
+
+                <!-- Image -->
+                <div class="col-lg-6">
+                    <img src="3649fc07df8bc585aea452126ee2d7e516cf6b64-512x512.avif" alt="Speaker on stage"
+                        class="img-fluid rounded-4" />
+                </div>
+
             </div>
         </div>
     </section>
 
+    <!-- Events Section -->
+    <section class="events-section">
+        <div class="row g-5  py-5 align-items-center">
+            <div class="  col-md-5">
+                <p class="section-subtitle">Blog</p>
+                <h2 class="section-title">Blogs & News</h2>
+            </div>
+            <div class="col-md-7">
+                <p>Synergistically seize front-end methods of empowerment without extensive core competencies.
+                    Progressively repurpose alternative platforms
 
-    <section class="project-section">
+                </p>
+            </div>
+        </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="event-card video-card">
+                        <img src="sachin_collage_1-new-scaled.webp" alt="Event" class="card-image" />
+                        <video class="card-video" src="2024-05-08T01-12-57.745Z-Homepage_Cards_DWD.mp4" muted loop
+                            preload="none"></video>
+                        <div class="event-content">
+                            <h5>TONY ROBBINS</h5>
+                            <h3>BUSINESS<br>MASTERY</h3>
+                            <p>Grow your business exponentially</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="event-card video-card">
+                        <img src="sachin_collage_1-new-scaled.webp" alt="Event" class="card-image" />
+                        <video class="card-video" src="2024-05-08T01-12-57.745Z-Homepage_Cards_DWD.mp4" muted loop
+                            preload="none"></video>
+                        <div class="event-content">
+                            <h5>TONY ROBBINS</h5>
+                            <h3>UNLEASH THE<br>POWER WITHIN</h3>
+                            <p>Transform your life in 4 days</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="event-card video-card">
+                        <img src="sachin_collage_1-new-scaled.webp" alt="Event" class="card-image" />
+                        <video class="card-video" src="2024-05-08T01-12-57.745Z-Homepage_Cards_DWD.mp4" muted loop
+                            preload="none"></video>
+                        <div class="event-content">
+                            <h5>TONY ROBBINS</h5>
+                            <h3>DATE WITH<br>DESTINY</h3>
+                            <p>Design your ultimate life</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="event-card video-card">
+                        <img src="sachin_collage_1-new-scaled.webp" alt="Event" class="card-image" />
+                        <video class="card-video" src="2024-05-08T01-12-57.745Z-Homepage_Cards_DWD.mp4" muted loop
+                            preload="none"></video>
+                        <div class="event-content">
+                            <h5>TONY ROBBINS</h5>
+                            <h3>LEADERSHIP<br>ACADEMY</h3>
+                            <p>Become an extraordinary leader</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="event-card video-card">
+                        <img src="sachin_collage_1-new-scaled.webp" alt="Event" class="card-image" />
+                        <video class="card-video" src="2024-05-08T01-12-57.745Z-Homepage_Cards_DWD.mp4" muted loop
+                            preload="none"></video>
+                        <div class="event-content">
+                            <h5>TONY ROBBINS</h5>
+                            <h3>WEALTH<br>MASTERY</h3>
+                            <p>Master your financial future</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="event-card video-card">
+                        <img src="sachin_collage_1-new-scaled.webp" alt="Event" class="card-image" />
+                        <video class="card-video" src="2024-05-08T01-12-57.745Z-Homepage_Cards_DWD.mp4" muted loop
+                            preload="none"></video>
+                        <div class="event-content">
+                            <h5>TONY ROBBINS</h5>
+                            <h3>LIFE<br>MASTERY</h3>
+                            <p>Create lasting change</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    <section class="news-section">
+        <div class="row bg-light">
+            <div class="col-md-3">
+                <div class="news-label h-100   d-flex justify-content-center align-items-center">
+                    <h3 class="text-dark">Featured in →</h3>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="swiper news-swiper bg-light">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/logo1.png" alt="ABP News">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/logo1.png" alt="The Asian Age">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/logo1.png" alt="Zee News">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/logo1.png" alt="Financial Express">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/logo1.png" alt="Indian Express">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/logo1.png" alt="ABP News">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/logo1.png" alt="The Asian Age">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/logo1.png" alt="Zee News">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/logo1.png" alt="Financial Express">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/logo1.png" alt="Indian Express">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Video Section -->
+    <section class="video-section">
+        <video class="bg-video" src="2024-05-08T01-12-57.745Z-Homepage_Cards_DWD.mp4" autoplay muted loop playsinline>
+        </video>
+        <div class="video-overlay"></div>
+        <div class="video-content">
+            <h2>Master every<br>area of your life</h2>
+            <p>
+                Close the gap between where you are and where you want to be with
+                Tony Robbins' scientifically proven system.
+            </p>
+            <button class="btn-start">Start now</button>
+        </div>
+    </section>
+
+
+
+
+    <section class="video-gallery bg-white">
+
+
         <div class="container">
-            <div class="row g-5  align-items-center">
+            <div class="row g-5   align-items-center">
                 <div class="  col-md-5">
-                    <p class="section-subtitle">Services</p>
-                    <h2 class="section-title">My specialties</h2>
+                    <p class="section-subtitle text-dark">Blog</p>
+                    <h2 class="section-title text-dark">Blogs & News</h2>
                 </div>
                 <div class="col-md-7">
-                    <p>Synergistically seize front-end methods of empowerment without extensive core competencies.
+                    <p class="text-black">Synergistically seize front-end methods of empowerment without extensive core
+                        competencies.
                         Progressively repurpose alternative platforms
 
                     </p>
                 </div>
             </div>
+            <div class="swiper video-swiper">
+                <div class="swiper-wrapper">
 
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6">
-                    <div class="project-card card-5">
-                        <img src="img/post_02-640x640.jpg" alt="Transparent Funding">
-                        <div class="card-overlay">
-                            <div>
-                                <span class="card-tag">local projects & initiatives</span>
-                            </div>
-                            <div class="card-content">
-                                <div class="card-number">01/</div>
-                                <h3 class="card-title">Transparent<br>Funding</h3>
-                                <button class="card-btn">
-                                    Explore
-                                    <span class="arrow-icon">→</span>
-                                </button>
-                            </div>
+                    <div class="swiper-slide ">
+                        <div class="video-cards">
+                            <iframe src="https://www.youtube.com/embed/UjMm7YLhsuI?si=X3dvYNj4H6wNVfI0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="project-card card-6">
-                        <img src="img/post_11-640x640.jpg" alt="Inspiration & Impact">
-                        <div class="card-overlay">
-                            <div>
-                                <span class="card-tag">Explore</span>
-                            </div>
-                            <div class="card-content">
-                                <div class="card-number">02/</div>
-                                <h3 class="card-title">Inspiration<br>& Impact</h3>
-                                <button class="card-btn">
-                                    catalyst for new ideas
-                                    <span class="arrow-icon">→</span>
-                                </button>
-                            </div>
+                    <div class="swiper-slide ">
+                        <div class="video-cards">
+                            <iframe src="https://www.youtube.com/embed/UjMm7YLhsuI?si=X3dvYNj4H6wNVfI0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-lg-3 col-md-6">
-                    <div class="project-card card-9">
-                        <img src="img/post_12-640x640.jpg" alt="Participation & Involvement">
-                        <div class="card-overlay">
-                            <div>
-                                <span class="card-tag">democratic decision</span>
-                            </div>
-                            <div class="card-content">
-                                <div class="card-number">03/</div>
-                                <h3 class="card-title">Participation<br>& Involvement</h3>
-                                <button class="card-btn">
-                                    Explore
-                                    <span class="arrow-icon">→</span>
-                                </button>
-                            </div>
+                    <div class="swiper-slide ">
+                        <div class="video-cards">
+                            <iframe src="https://www.youtube.com/embed/UjMm7YLhsuI?si=X3dvYNj4H6wNVfI0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="project-card card-8">
-                        <img src="img/blog2.png" alt="Transparent Funding">
-                        <div class="card-overlay">
-                            <div>
-                                <span class="card-tag">local projects & initiatives</span>
-                            </div>
-                            <div class="card-content">
-                                <div class="card-number">01/</div>
-                                <h3 class="card-title">Transparent<br>Funding</h3>
-                                <button class="card-btn">
-                                    Explore
-                                    <span class="arrow-icon">→</span>
-                                </button>
-                            </div>
+                    <div class="swiper-slide ">
+                        <div class="video-cards">
+                            <iframe src="https://www.youtube.com/embed/UjMm7YLhsuI?si=X3dvYNj4H6wNVfI0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="swiper-slide ">
+                        <div class="video-cards">
+                            <iframe src="https://www.youtube.com/embed/UjMm7YLhsuI?si=X3dvYNj4H6wNVfI0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide ">
+                        <div class="video-cards">
+                            <iframe src="https://www.youtube.com/embed/UjMm7YLhsuI?si=X3dvYNj4H6wNVfI0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="video-cards">
+                            <iframe src="https://www.youtube.com/embed/UjMm7YLhsuI?si=X3dvYNj4H6wNVfI0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
-
-    <!-- Services Section -->
-    <section class="services-section">
-        <div class="container">
-            <div class="row g-5  align-items-center">
-                <div class="  col-md-5">
-                    <p class="section-subtitle">Services</p>
-                    <h2 class="section-title">My specialties</h2>
-                </div>
-                <div class="col-md-7">
-                    <p>Synergistically seize front-end methods of empowerment without extensive core competencies.
-                        Progressively repurpose alternative platforms
-
-                    </p>
-                </div>
-            </div>
-
-            <div class="row g-4">
-                <div class="col-md-8">
-                    <div class="services-grid">
-                        <div class="service-card">
-                            <div class="service-arrow">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <line x1="7" y1="17" x2="17" y2="7" />
-                                    <polyline points="7 7 17 7 17 17" />
-                                </svg>
-                            </div>
-                            <div class="service-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="5" y="2" width="14" height="20" rx="2" />
-                                    <line x1="12" y1="18" x2="12" y2="18" />
-                                </svg>
-                            </div>
-                            <h3 class="service-title">Mobile Apps design</h3>
-                        </div>
-
-                        <div class="service-card">
-                            <div class="service-arrow">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <line x1="7" y1="17" x2="17" y2="7" />
-                                    <polyline points="7 7 17 7 17 17" />
-                                </svg>
-                            </div>
-                            <div class="service-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="3" y="3" width="18" height="18" rx="2" />
-                                    <path d="M9 3v18" />
-                                </svg>
-                            </div>
-                            <h3 class="service-title">UI/UX design</h3>
-                        </div>
-
-                        <div class="service-card">
-                            <div class="service-arrow">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <line x1="7" y1="17" x2="17" y2="7" />
-                                    <polyline points="7 7 17 7 17 17" />
-                                </svg>
-                            </div>
-                            <div class="service-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="2" y="3" width="20" height="14" rx="2" />
-                                    <line x1="8" y1="21" x2="16" y2="21" />
-                                    <line x1="12" y1="17" x2="12" y2="21" />
-                                </svg>
-                            </div>
-                            <h3 class="service-title">Website design</h3>
-                        </div>
-
-                        <div class="service-card">
-                            <div class="service-arrow">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <line x1="7" y1="17" x2="17" y2="7" />
-                                    <polyline points="7 7 17 7 17 17" />
-                                </svg>
-                            </div>
-                            <div class="service-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path
-                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
-                                </svg>
-                            </div>
-                            <h3 class="service-title">Webflow development</h3>
-                        </div>
-
-                        <div class="service-card">
-                            <div class="service-arrow">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <line x1="7" y1="17" x2="17" y2="7" />
-                                    <polyline points="7 7 17 7 17 17" />
-                                </svg>
-                            </div>
-                            <div class="service-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="2" y="7" width="20" height="14" rx="2" />
-                                    <path d="M16 3v4M8 3v4" />
-                                </svg>
-                            </div>
-                            <h3 class="service-title">Brand identity</h3>
-                        </div>
-
-                        <div class="service-card">
-                            <div class="service-arrow">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <line x1="7" y1="17" x2="17" y2="7" />
-                                    <polyline points="7 7 17 7 17 17" />
-                                </svg>
-                            </div>
-                            <div class="service-icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="3" />
-                                    <path d="M12 1v6m0 6v6M1 12h6m6 0h6" />
-                                </svg>
-                            </div>
-                            <h3 class="service-title">Interaction design</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card-container h-100">
-                        <h5>SAY <br>HELLO!</h5>
-                        <p><a href="mailto:hello@henry.com" class="email">hello@henry.com</a></p>
-                        <a href="#" class="arrow-icon">
-                            <i class="bi bi-arrow-up-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-
 
 
     <section class="blog-section">
         <div class="container">
-            <div class="row g-5  align-items-center">
+            <div class="row g-5  py-5 align-items-center">
                 <div class="  col-md-5">
                     <p class="section-subtitle">Blog</p>
                     <h2 class="section-title">Blogs & News</h2>
                 </div>
                 <div class="col-md-7">
-                    <p>Synergistically seize front-end methods of empowerment without extensive core competencies.
+                    <p class="">Synergistically seize front-end methods of empowerment without extensive core
+                        competencies.
                         Progressively repurpose alternative platforms
 
                     </p>
@@ -675,114 +443,219 @@
     </section>
 
 
-
-
-
-
-    <section class="cta py-5">
-        <div class="container">
-            <div class="hero-box  position-relative">
-                <div class="row  g-5">
-
-                    <div class="col-lg-6">
-                        <h1 class="hero-title p-5">
-                            Let's create the best <span>product</span><br>
-                            <span class="light-text">experience</span><br>
-                            for your project
-                        </h1>
+    <div class="footer-section">
+        <div class="contact-cta ">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h2 class="cta-title">Let’s Showcase Your Space the Right Way?</h2>
+                        <p class="cta-phone">Whether you're promoting a factory, a hotel, an office, or a product —
+                            Rajeev Bhatt delivers the visuals your audience will remember.
+                        </p>
                     </div>
+                    <div class="col-md-4 text-md-end text-center mt-3 mt-md-0">
+                        <a href="contact.html" class="btn ">
+                            Book a Free Consultation Call
 
-                    <div class="col-lg-6 text-center d-flex justify-content-center align-items-end">
-                        <img src="img/ctaLogo.png" class="hero-img floating-img img-fluid" alt="">
-                        <a href="#contact" class="cta-btn">
-                            <span>↗</span>
+                            <i class="fas fa-arrow-right ms-2"></i>
                         </a>
                     </div>
-
-                    <!-- CTA Button -->
-
-
                 </div>
             </div>
         </div>
-    </section>
 
+        <footer class="main-footer">
+            <div class="container">
+                <!-- Footer Content -->
+                <div class="footer-content">
+                    <div class="row">
+                        <!-- Logo & Social -->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                            <div class="footer-logo">
+                                <img src="img/logo.png" class="img-fluid logo" alt="footer-logo">
+                            </div>
+                            <div class="social-links mt-4">
+                                <a href="#" class="social-icon" title="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-icon" title="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon" title="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-icon" title="YouTube">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                            <div class="since-text">since 2000</div>
+                        </div>
 
-    <footer class="footer-section">
-        <div class="container">
-            <div class="footer-top">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <p class="footer-description">
-                            Phosflu orescently redefine cross the functional data through enabled mind share.ess
-                            products
-                        </p>
-                        <h2 class="footer-cta">
-                            Let's Chat
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="7" y1="17" x2="17" y2="7"></line>
-                                <polyline points="7 7 17 7 17 17"></polyline>
-                            </svg>
-                        </h2>
+                        <!-- Contacts Column -->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                            <h5 class="footer-title">Contacts</h5>
+                            <div class="footer-links">
+                                <p class="address">Rajeev Bhatt, USA, New York - 1060 Str. First Avenue 1</p>
+                                <a href="tel:+13685678954" class="footer-link">+1 (368) 567 89 54</a>
+                                <a href="tel:+18003508431" class="footer-link">+ 800 350 84 31</a>
+                                <a href="mailto:support@Rajeev Bhatt.com" class="footer-link">support@Rajeev
+                                    Bhatt.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Company Column -->
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h5 class="footer-title">Quick Links</h5>
+                            <div class="footer-links">
+                                <a href="index.html" class="footer-link">Home</a>
+                                <a href="about.html" class="footer-link">About</a>
+                                <a href="services.html" class="footer-link">Services</a>
+                                <a href="blog.html" class="footer-link">Blog</a>
+                                <a href="contact.html" class="footer-link">Contacts</a>
+                            </div>
+                        </div>
+
+                        <!-- Services Column -->
+                        <div class="col-lg-3 col-md-6">
+                            <h5 class="footer-title">Services</h5>
+                            <div class="footer-links">
+
+                                <a href="drone-shoot-services.html" class="footer-link">Drone Shoot Services</a>
+                                <a href="event-and-exhibition-coverage.html" class="footer-link">Event & Exhibition
+                                    Coverage</a>
+                                <a href="photography-and-videography.html" class="footer-link">Photography &
+                                    Videography</a>
+                                <a href="product-photography.html" class="footer-link">Product Photography</a>
+                                <a href="ugc-and-podcast-production.html" class="footer-link">UGC & Podcast
+                                    Production</a>
+                                <a href="corporate-and-brand-videos.html" class="footer-link">Corporate & Brand
+                                    Videos</a>
+                                <a href="real-estate-and-interior-photography.html" class="footer-link">Real Estate &
+                                    Interior Photography</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-3 offset-lg-1">
-                        <ul class="footer-links">
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">blog</a></li>
-                            <li><a href="#">Policy</a></li>
-                            <li><a href="#">Refund</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="footer-contact">
-                            <h4><span class="highlight">Rajeev Bhatt</span>@example.com</h4>
-                            <p>4517 Washington Ave. Manchester,<br>Kentucky 39495</p>
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="footer-bottom">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            <p class="copyright">©Rajeev Bhatt 2025. All rights reserved.</p>
+                        </div>
+                        <div class="col-md-6 text-center text-md-end">
+                            <a href="#" class="footer-bottom-link">Terms of use</a>
+                            <a href="#" class="footer-bottom-link">Privacy</a>
+                            <a href="#" class="footer-bottom-link">Environmental Policy</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </footer>
+    </div>
 
-            <div class="footer-bottom">
-                <p class="footer-copyright">Rajeev Bhatt © 2025, All Rights Reserved</p>
-                <div class="social-links">
-                    <a href="#" class="social-link" aria-label="Facebook">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-link" aria-label="Twitter">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path
-                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
-                            </path>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-link" aria-label="Instagram">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-link" aria-label="YouTube">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <path
-                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
-                            </path>
-                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
 
-    <script src="script.js"></script>
-
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new Swiper(".video-swiper", {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                loop: false,
+
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1,
+                    },
+                    576: {
+                        slidesPerView: 2,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                    },
+                    992: {
+                        slidesPerView: 4,
+                    },
+                },
+            });
+        });
+    </script>
+
+    <!-- Custom JS -->
+    <script>
+        // Video card hover effect
+        document.querySelectorAll('.video-card').forEach(card => {
+            const video = card.querySelector('.card-video');
+
+            card.addEventListener('mouseenter', function () {
+                video.currentTime = 0;
+                video.play();
+            });
+
+            card.addEventListener('mouseleave', function () {
+                video.pause();
+            });
+        });
+
+        // Initialize Swiper
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 25,
+                },
+                1400: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                }
+            }
+        });
+
+
+
+    </script>
+    <script>
+        new Swiper(".news-swiper", {
+            slidesPerView: 5,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                320: { slidesPerView: 2 },
+                768: { slidesPerView: 3 },
+                1024: { slidesPerView: 5 },
+            },
+        });
+
+
+    </script>
 
 </body>
 
