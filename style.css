@@ -244,7 +244,7 @@ p {
 /* ==================== HERO SCROLL ==================== */
 .hero-scroll {
     height: 100vh;
-    background-image: url(sachin_collage_1-new-scaled.webp);
+    background-image: url(img/hro.jpeg);
     background-repeat: repeat-y;
     background-size: cover;
     position: relative;
@@ -358,7 +358,7 @@ p {
     -o-border-radius: var(--radius-3xl);
 }
 
-.video-card::after {
+/* .video-card::after {
     content: "";
     position: absolute;
     inset: 0;
@@ -369,7 +369,7 @@ p {
     -moz-transition: background var(--transition-base);
     -ms-transition: background var(--transition-base);
     -o-transition: background var(--transition-base);
-}
+} */
 
 .card-image {
     position: absolute;
@@ -405,6 +405,7 @@ p {
     bottom: var(--spacing-2xl);
     left: var(--spacing-2xl);
     color: var(--color-light);
+    display: none;
     z-index: 10;
 }
 
@@ -609,6 +610,7 @@ p {
 .news-swiper {
   margin-left: 20px;
   width: 100%;
+  padding: 10px 0;
 }
 
 .news-swiper .swiper-slide {
@@ -617,6 +619,7 @@ p {
   padding: 15px 25px;
   display: flex;
   align-items: center;
+  height: 120px;
   justify-content: center;
 }
 
@@ -1269,4 +1272,204 @@ height: 400px;
 .phone-img,.robot-img, .helmet-img{
     max-width: 350px;
  
+}
+
+
+
+
+   .contact-form {
+            background: var(--color-primary);
+            border-radius: var(--radius-2xl);
+            padding: var(--spacing-3xl);
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-xl);
+        }
+
+        .form-header h2 {
+            font-size: var(--font-size-4xl);
+            font-weight: var(--font-weight-extrabold);
+            color: var(--color-dark);
+            line-height: 1.2;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .form-header p {
+            font-size: var(--font-size-base);
+            color: var(--color-dark);
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-xs);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid var(--color-dark);
+            padding: var(--spacing-sm) 0;
+            font-family: var(--font-family-primary);
+            font-size: var(--font-size-base);
+            color: var(--color-dark);
+            outline: none;
+            transition: border-color var(--transition-base);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-bottom-color: var(--color-gray-800);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 60px;
+        }
+
+        .checkbox-section h4 {
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-dark);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .checkbox-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-md);
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            cursor: pointer;
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            border: 2px solid var(--color-dark);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            position: relative;
+            transition: all var(--transition-base);
+        }
+
+        .checkbox-item input[type="checkbox"]:checked {
+            background: var(--color-dark);
+        }
+
+        .checkbox-item input[type="checkbox"]:checked::after {
+            content: '✓';
+            position: absolute;
+            color: var(--color-primary);
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-bold);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .checkbox-item label {
+            font-size: var(--font-size-base);
+            color: var(--color-dark);
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .submit-btn {
+            background: var(--color-dark);
+            color: var(--color-light);
+            border: none;
+            padding: var(--spacing-lg) var(--spacing-2xl);
+            border-radius: var(--radius-lg);
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-semibold);
+            cursor: pointer;
+            transition: all var(--transition-base);
+            margin-top: var(--spacing-md);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+.section{
+  padding: 60px 0;
+}
+
+.contact-left h2 {
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: var(--spacing-md);
+}
+
+.contact-left p {
+    font-size: var(--font-size-base);
+    color: var(--color-gray-600);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xl);
+}
+
+.contact-item h5 {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-xs);
+}
+
+.contact-item p {
+    font-size: var(--font-size-sm);
+    color: var(--color-gray-600);
+    margin-bottom: var(--spacing-xs);
+}
+
+/* SOCIAL ICONS */
+.social-links {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+}
+
+.social-links a {
+    font-size: var(--font-size-lg);
+    color: var(--color-gray-700);
+    transition: var(--transition-base);
+}
+
+.social-links a:hover {
+    color: var(--color-primary);
+}
+
+
+
+.news-swiper .swiper-wrapper .swiper-slide a{
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+height: 100%;
+}
+
+
+.news-swiper a img{
+  mix-blend-mode: multiply;
 }
