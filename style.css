@@ -241,6 +241,73 @@ p {
     width: 80%;
 }
 
+
+
+/* Initial styles */
+.nav-section {
+    margin: auto;
+    position: fixed;
+    top: var(--spacing-lg); /* Initial top value */
+    width: 100%;
+    z-index: var(--z-fixed);
+    padding: 0 var(--spacing-md);
+    transition: all 0.3s ease-in-out; /* Smooth transition for changes */
+}
+
+.navbar-custom {
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow-2xl);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: var(--spacing-md) var(--spacing-3xl);
+    max-width: 1400px;
+    margin: 0 auto;
+    transition: all var(--transition-base);
+}
+
+/* Class added when scrolled */
+.scrolled  {
+    top: 0 !important; /* Set top to 0 after scroll */
+    border-radius: 0; /* Remove border radius */
+}
+
+.navbar-custom .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-light);
+    font-size: var(--font-size-xl);
+    transition: transform var(--transition-fast);
+}
+
+.navbar-custom .logo-circle {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(135deg, var(--color-secondary), #ff4757);
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-xl);
+    box-shadow: var(--shadow-lg);
+    transition: all var(--transition-base);
+}
+
+.navbar-custom .nav-link {
+    color: var(--color-light) !important;
+    margin: 0 var(--spacing-md);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+    transition: all var(--transition-base);
+    position: relative;
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-lg);
+}
+
 /* ==================== HERO SCROLL ==================== */
 .hero-scroll {
     height: 100vh;
@@ -1473,3 +1540,38 @@ height: 100%;
 .news-swiper a img{
   mix-blend-mode: multiply;
 }
+
+.share-btn{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.breadcrumb-section  h1{
+  font-size: var(--font-size-4xl);
+  max-width: 1000px;
+}
+
+#recentPostsCarousel img{
+  height: 300px;
+  width: 100%;
+}
+
+#recentPostsCarousel h6, #recentPostsCarousel p{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+#recentPostsCarousel h6{
+  -webkit-line-clamp: 2;
+
+}
+ #recentPostsCarousel p{
+    -webkit-line-clamp: 3;
+
+ }
