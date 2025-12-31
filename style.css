@@ -272,7 +272,13 @@ p {
     top: 0 !important; /* Set top to 0 after scroll */
     border-radius: 0; /* Remove border radius */
 }
-
+.scrolled nav{
+    border-radius: 0px 0 40px 40px !important;
+    -webkit-border-radius: 0px 0 40px 40px !important;
+    -moz-border-radius: 0px 0 40px 40px !important;
+    -ms-border-radius: 0px 0 40px 40px !important;
+    -o-border-radius: 0px 0 40px 40px !important;
+}
 .navbar-custom .navbar-brand {
     display: flex;
     align-items: center;
