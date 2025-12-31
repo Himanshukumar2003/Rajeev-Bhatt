@@ -14,6 +14,31 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .news-section a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .news-logo {
+
+
+            /* same height for all */
+            object-fit: contain;
+            /* image stretch nahi hogi */
+            margin: auto;
+            filter: grayscale(100%);
+            transition: all 0.3s ease;
+        }
+
+        .news-logo:hover {
+            filter: grayscale(0);
+            transform: scale(1.08);
+        }
+    </style>
 </head>
 
 <body>
@@ -72,69 +97,61 @@
 
     <!-- Hero Video Section -->
 
-    <section class="news-section  bg-white">
-        <div class="row ">
-            <div class="col-md-3">
-                <div class="news-label h-100 d-flex justify-content-center align-items-center">
-                    <h3 class="text-dark">Featured in →</h3>
-                </div>
-            </div>
-            <div class="col-md-9">
-                <div class="swiper news-swiper bg-white">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a target="_blank"
-                                href="https://www.awazthevoice.in/business-news/rajeev-bhatt-drives-neurodiversity-revolution-in-india-44927.html#:~:text=On%203%20December%202025,%20when,recognition%20of%20a%20single%20achievement.">
-                                <img src="img/feacher/7.svg" alt="ABP News">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a target="_blank" href="https://en.sangritimes.com/spotlight/topic/rajeev-bhatt">
-                                <img src="img/feacher/8.webp" alt="The Asian Age">
-                            </a>
-                        </div>
+    <section class="news-section bg-white py-5">
+        <div class="container">
+            <div class="row g-4 align-items-center justify-content-center">
 
-                        <div class="swiper-slide">
-                            <a target="_blank"
-                                href="https://hindi.news18.com/news/delhi/south-delhi-divya-kala-mela-ability-inclusion-community-empowerment-9968064.html">
-                                <img src="img/feacher/10.avif" alt="Financial Express">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a target="_blank"
-                                href="https://www.theceo.in/amp/story/press-release/rajeev-bhatt-the-architect-of-indias-neurodiversity-and-inclusion-revolution">
-                                <img src="img/feacher/1.avif" alt="Indian Express">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://timesofindia.indiatimes.com/blogs/author/rajeev-bhatt/" target="_blank">
-                                <img src="img/feacher/2.png" alt="ABP News">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a target="_blank"
-                                href="https://www.tribuneindia.com/news/business/rajeev-bhatt-the-architect-of-indias-neurodiversity-and-inclusion-revolution/amp">
-                                <img src="img/feacher/3.webp" alt="The Asian Age">
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="https://www.dainikjagranmpcg.com/national-international/rajeev-bhatt-received-national-award-nation-appreciated-his-three-decades/article-39621
-                                target=" _blank">
-                                <img src="img/feacher/4.png" alt="Zee News">
-                            </a>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <a target="_blank"
-                                href="https://www.ptinews.com/press-release/rajeev-bhatt-the-architect-of-india%E2%80%99s-neurodiversity-and-inclusion-revolution/3164031">
-                                <img src="img/feacher/6.jpg" alt="Indian Express">
-                            </a>
-                        </div>
-                    </div>
+                <div class="col-6 col-sm-3 col-md-4 col-lg-3">
+                    <a target="_blank"
+                        href="https://www.awazthevoice.in/business-news/rajeev-bhatt-drives-neurodiversity-revolution-in-india-44927.html">
+                        <img src="img/feacher/7.svg" class="img-fluid news-logo" alt="ABP News">
+                    </a>
                 </div>
+
+                <div class="col-6 col-sm-3 col-md-4 col-lg-3">
+                    <a target="_blank" href="https://en.sangritimes.com/spotlight/topic/rajeev-bhatt">
+                        <img src="img/feacher/8.webp" class="img-fluid news-logo" alt="Asian Age">
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-3 col-md-4 col-lg-3">
+                    <a target="_blank"
+                        href="https://hindi.news18.com/news/delhi/south-delhi-divya-kala-mela-ability-inclusion-community-empowerment-9968064.html">
+                        <img src="img/feacher/10.avif" class="img-fluid news-logo" alt="News18">
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-3 col-md-4 col-lg-3">
+                    <a target="_blank"
+                        href="https://www.theceo.in/amp/story/press-release/rajeev-bhatt-the-architect-of-indias-neurodiversity-and-inclusion-revolution">
+                        <img src="img/feacher/1.avif" class="img-fluid news-logo" alt="The CEO">
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-3 col-md-4 col-lg-3">
+                    <a target="_blank" href="https://timesofindia.indiatimes.com/blogs/author/rajeev-bhatt/">
+                        <img src="img/feacher/2.png" class="img-fluid news-logo" alt="TOI">
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-3 col-md-4 col-lg-3">
+                    <a target="_blank"
+                        href="https://www.tribuneindia.com/news/business/rajeev-bhatt-the-architect-of-indias-neurodiversity-and-inclusion-revolution/amp">
+                        <img src="img/feacher/3.webp" class="img-fluid news-logo" alt="Tribune">
+                    </a>
+                </div>
+
+                <div class="col-6 col-sm-3 col-md-4 col-lg-3">
+                    <a target="_blank"
+                        href="https://www.ptinews.com/press-release/rajeev-bhatt-the-architect-of-india%E2%80%99s-neurodiversity-and-inclusion-revolution/3164031">
+                        <img src="img/feacher/6.jpg" class="img-fluid news-logo" alt="PTI">
+                    </a>
+                </div>
+
             </div>
         </div>
     </section>
+
 
 
 
@@ -250,102 +267,8 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            new Swiper(".video-swiper", {
-                slidesPerView: 4,
-                spaceBetween: 20,
-                loop: false,
-
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-
-                breakpoints: {
-                    0: {
-                        slidesPerView: 1,
-                    },
-                    576: {
-                        slidesPerView: 2,
-                    },
-                    768: {
-                        slidesPerView: 3,
-                    },
-                    992: {
-                        slidesPerView: 4,
-                    },
-                },
-            });
-        });
-    </script>
-
-    <!-- Custom JS -->
-    <script>
-        // Video card hover effect
-        document.querySelectorAll('.video-card').forEach(card => {
-            const video = card.querySelector('.card-video');
-
-            card.addEventListener('mouseenter', function () {
-                video.currentTime = 0;
-                video.play();
-            });
-
-            card.addEventListener('mouseleave', function () {
-                video.pause();
-            });
-        });
-
-        // Initialize Swiper
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 20,
-            loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 25,
-                },
-                1400: {
-                    slidesPerView: 4,
-                    spaceBetween: 30,
-                }
-            }
-        });
 
 
-
-    </script>
-    <script>
-        new Swiper(".news-swiper", {
-            slidesPerView: 5,
-            spaceBetween: 20,
-            loop: true,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false,
-            },
-            breakpoints: {
-                320: { slidesPerView: 2 },
-                768: { slidesPerView: 3 },
-                1024: { slidesPerView: 5 },
-            },
-        });
-
-
-    </script>
 
 </body>
 
