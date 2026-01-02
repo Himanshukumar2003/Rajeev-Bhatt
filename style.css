@@ -1718,3 +1718,17 @@ height: 100%;
         }
 
         ::placeholder {color: #a8a8a8 !important;}
+
+
+          .news-swiper img {
+
+
+       
+            filter: grayscale(100%);
+            transition: all 0.3s ease;
+        }
+
+        .news-swiper img:hover {
+            filter: grayscale(0);
+            transform: scale(1.08);
+        }
