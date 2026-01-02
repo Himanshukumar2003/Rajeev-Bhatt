@@ -17,27 +17,154 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-        .news-section a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .news-cards {
+            background-color: var(--color-gray-900);
+            border: 1px solid var(--color-gray-800);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            transition: all var(--transition-base);
             height: 100%;
+            display: flex;
+            flex-direction: column;
         }
 
-        .news-logo {
-
-
-            /* same height for all */
-            object-fit: contain;
-            /* image stretch nahi hogi */
-            margin: auto;
-            filter: grayscale(100%);
-            transition: all 0.3s ease;
+        .news-cards:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--color-primary);
         }
 
-        .news-logo:hover {
-            filter: grayscale(0);
-            transform: scale(1.08);
+        .news-cards img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .news-cards-content {
+            padding: var(--spacing-lg);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-cards-title {
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-light);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .news-cards-excerpt {
+            font-size: var(--font-size-sm);
+            color: var(--text-light);
+            margin-bottom: var(--spacing-md);
+            flex-grow: 1;
+        }
+
+        .news-cards-link {
+            color: var(--color-primary);
+            font-weight: var(--font-weight-semibold);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: auto;
+            transition: color var(--transition-fast);
+        }
+
+        .news-cards-link:hover {
+            color: var(--color-light);
+        }
+
+        .line-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        @media (max-width: 768px) {
+            .news-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .news-cards img {
+                height: 150px;
+            }
+        }
+
+        .news-cards {
+            background-color: var(--color-gray-900);
+            border: 1px solid var(--color-gray-800);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            transition: all var(--transition-base);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-cards:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--color-primary);
+        }
+
+        .news-cards img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .news-cards-content {
+            padding: var(--spacing-lg);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-cards-title {
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-light);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .news-cards-excerpt {
+            font-size: var(--font-size-sm);
+            color: var(--text-light);
+            margin-bottom: var(--spacing-md);
+            flex-grow: 1;
+        }
+
+        .news-cards-link {
+            color: var(--color-primary);
+            font-weight: var(--font-weight-semibold);
+            text-decoration: none;
+            display: inline-block;
+            margin-top: auto;
+            transition: color var(--transition-fast);
+        }
+
+        .news-cards-link:hover {
+            color: var(--color-light);
+        }
+
+        .line-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        @media (max-width: 768px) {
+            .news-cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .news-cards img {
+                height: 150px;
+            }
         }
     </style>
 </head>
@@ -97,58 +224,66 @@
 
 
     <!-- Hero Video Section -->
-
-    <section class="news-section bg-white py-5">
-        <div class="container">
-            <div class="row g-4 align-items-center justify-content-center">
-
-                <div class="col-6 col-sm-3 col-md-4 col-lg-3">
-                    <a target="_blank"
-                        href="https://www.awazthevoice.in/business-news/rajeev-bhatt-drives-neurodiversity-revolution-in-india-44927.html">
-                        <img src="img/feacher/7.svg" class="img-fluid news-logo" alt="ABP News">
-                    </a>
+    <section class="news-section  bg-white">
+        <div class="row ">
+            <div class="col-md-3">
+                <div class="news-label h-100 d-flex justify-content-center align-items-center">
+                    <h3 class="text-dark">Featured in →</h3>
                 </div>
+            </div>
+            <div class="col-md-9">
+                <div class="swiper news-swiper bg-white">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a target="_blank"
+                                href="https://www.awazthevoice.in/business-news/rajeev-bhatt-drives-neurodiversity-revolution-in-india-44927.html#:~:text=On%203%20December%202025,%20when,recognition%20of%20a%20single%20achievement.">
+                                <img src="img/feacher/7.svg" alt="ABP News">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank" href="https://en.sangritimes.com/spotlight/topic/rajeev-bhatt">
+                                <img src="img/feacher/8.webp" alt="The Asian Age">
+                            </a>
+                        </div>
 
-                <div class="col-6 col-sm-3 col-md-4 col-lg-3">
-                    <a target="_blank" href="https://en.sangritimes.com/spotlight/topic/rajeev-bhatt">
-                        <img src="img/feacher/8.webp" class="img-fluid news-logo" alt="Asian Age">
-                    </a>
+                        <div class="swiper-slide">
+                            <a target="_blank"
+                                href="https://hindi.news18.com/news/delhi/south-delhi-divya-kala-mela-ability-inclusion-community-empowerment-9968064.html">
+                                <img src="img/feacher/10.avif" alt="Financial Express">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank"
+                                href="https://www.theceo.in/amp/story/press-release/rajeev-bhatt-the-architect-of-indias-neurodiversity-and-inclusion-revolution">
+                                <img src="img/feacher/1.avif" alt="Indian Express">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://timesofindia.indiatimes.com/blogs/author/rajeev-bhatt/" target="_blank">
+                                <img src="img/feacher/2.png" alt="ABP News">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a target="_blank"
+                                href="https://www.tribuneindia.com/news/business/rajeev-bhatt-the-architect-of-indias-neurodiversity-and-inclusion-revolution/amp">
+                                <img src="img/feacher/3.webp" alt="The Asian Age">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="https://www.dainikjagranmpcg.com/national-international/rajeev-bhatt-received-national-award-nation-appreciated-his-three-decades/article-39621
+                                target=" _blank">
+                                <img src="img/feacher/4.png" alt="Zee News">
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a target="_blank"
+                                href="https://www.ptinews.com/press-release/rajeev-bhatt-the-architect-of-india%E2%80%99s-neurodiversity-and-inclusion-revolution/3164031">
+                                <img src="img/feacher/6.jpg" alt="Indian Express">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col-6 col-sm-3 col-md-4 col-lg-3">
-                    <a target="_blank"
-                        href="https://hindi.news18.com/news/delhi/south-delhi-divya-kala-mela-ability-inclusion-community-empowerment-9968064.html">
-                        <img src="img/feacher/10.avif" class="img-fluid news-logo" alt="News18">
-                    </a>
-                </div>
-
-                <div class="col-6 col-sm-3 col-md-4 col-lg-3">
-                    <a target="_blank"
-                        href="https://www.theceo.in/amp/story/press-release/rajeev-bhatt-the-architect-of-indias-neurodiversity-and-inclusion-revolution">
-                        <img src="img/feacher/1.avif" class="img-fluid news-logo" alt="The CEO">
-                    </a>
-                </div>
-
-                <div class="col-6 col-sm-3 col-md-4 col-lg-3">
-                    <a target="_blank" href="https://timesofindia.indiatimes.com/blogs/author/rajeev-bhatt/">
-                        <img src="img/feacher/2.png" class="img-fluid news-logo" alt="TOI">
-                    </a>
-                </div>
-
-                <div class="col-6 col-sm-3 col-md-4 col-lg-3">
-                    <a target="_blank"
-                        href="https://www.tribuneindia.com/news/business/rajeev-bhatt-the-architect-of-indias-neurodiversity-and-inclusion-revolution/amp">
-                        <img src="img/feacher/3.webp" class="img-fluid news-logo" alt="Tribune">
-                    </a>
-                </div>
-
-                <div class="col-6 col-sm-3 col-md-4 col-lg-3">
-                    <a target="_blank"
-                        href="https://www.ptinews.com/press-release/rajeev-bhatt-the-architect-of-india%E2%80%99s-neurodiversity-and-inclusion-revolution/3164031">
-                        <img src="img/feacher/6.jpg" class="img-fluid news-logo" alt="PTI">
-                    </a>
-                </div>
-
             </div>
         </div>
     </section>
@@ -156,8 +291,120 @@
 
 
 
+    <div class="news-cards-section section">
+        <div class="container">
+            <div class="row g-4">
 
+                <!-- Awaz The Voice -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="news-cards">
+                        <img src="https://www.awazthevoice.in/upload/news/176502202106_2025_3164031_46.webp"
+                            alt="Rajeev Bhatt Neurodiversity Revolution">
+                        <div class="news-cards-content">
+                            <h3 class="news-cards-title">Rajeev Bhatt Drives Neurodiversity Revolution in India</h3>
+                            <p class="news-cards-excerpt line-clamp-3">
+                                On 3 December 2025, Rajeev Bhatt received the National Award for Empowerment of Persons
+                                with
+                                Disabilities,
+                                marking a defining moment in India’s neurodiversity movement.
+                            </p>
+                            <a href="https://www.awazthevoice.in/business-news/rajeev-bhatt-drives-neurodiversity-revolution-in-india-44927.html"
+                                target="_blank" class="news-cards-link">Read More →</a>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Sangri Times -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="news-cards">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEidu6y-J27L50fJFeQD4iAtVZbTrgD_bLKqJbDG4B-ODLu805vbDcM7UGOmn76WscJQkIxDBcVnjgCWU2_1_MtOI8vNlRtoOG3gRMUlN-nRUCftO7shxJQlgwFwcVpxhhO40Y7Lh5R1LtjLV72y5yqWG6mCzAvm87QnfnozsuYenAQaIsTwdMIg3DTGCa_i/w1600/Rajeev%20Bhatt.jpg"
+                            alt="Rajeev Bhatt Inclusion Architect">
+                        <div class="news-cards-content">
+                            <h3 class="news-cards-title">The Architect of India’s Neurodiversity & Inclusion Revolution
+                            </h3>
+                            <p class="news-cards-excerpt line-clamp-3">
+                                Rajeev Bhatt’s three decades of work have reshaped how India understands, supports,
+                                and empowers individuals with learning differences.
+                            </p>
+                            <a href="https://en.sangritimes.com/spotlight/rajeev-bhatt-the-architect-of-indias-neurodiversity-and-inclusion-revolution"
+                                target="_blank" class="news-cards-link">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The CEO -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="news-cards">
+                        <img src="https://media.assettype.com/theceo%2F2025-12-08%2F9fnsvcs0%2FPR-2.png?w=640"
+                            alt="Rajeev Bhatt The CEO">
+                        <div class="news-cards-content">
+                            <h3 class="news-cards-title">Rajeev Bhatt: Championing Neurodiversity in India</h3>
+                            <p class="news-cards-excerpt line-clamp-3">
+                                A powerful tribute to Rajeev Bhatt’s leadership and vision in transforming India’s
+                                disability empowerment ecosystem.
+                            </p>
+                            <a href="https://www.theceo.in/amp/story/press-release/rajeev-bhatt-the-architect-of-indias-neurodiversity-and-inclusion-revolution"
+                                target="_blank" class="news-cards-link">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tribune India -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="news-cards">
+                        <img src="https://www.tribuneindia.com/sortd-service/imaginary/v22-01/jpg/large/high?url=dGhldHJpYnVuZS1zb3J0ZC1wcm8tcHJvZC1zb3J0ZC9tZWRpYWU3NzgyY2MwLWQyOTgtMTFmMC1hNWYzLWU1NWZlMzk3YzBhZi5qcGc="
+                            alt="Rajeev Bhatt Tribune India">
+                        <div class="news-cards-content">
+                            <h3 class="news-cards-title">A Quiet Revolution in Neurodiversity</h3>
+                            <p class="news-cards-excerpt line-clamp-3">
+                                A standing ovation marked a national recognition of Rajeev Bhatt’s unwavering
+                                dedication to inclusion and learning differences.
+                            </p>
+                            <a href="https://www.tribuneindia.com/news/business/rajeev-bhatt-the-architect-of-indias-neurodiversity-and-inclusion-revolution/amp"
+                                target="_blank" class="news-cards-link">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PTI News -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="news-cards">
+                        <img src="https://www.awazthevoice.in/upload/news/176502202106_2025_3164031_46.webp"
+                            alt="Rajeev Bhatt PTI News">
+                        <div class="news-cards-content">
+                            <h3 class="news-cards-title">National Recognition for Neurodiversity Leadership</h3>
+                            <p class="news-cards-excerpt line-clamp-3">
+                                PTI highlights Rajeev Bhatt’s national award and his pioneering role
+                                in shaping India’s neurodiversity framework.
+                            </p>
+                            <a href="https://www.ptinews.com/press-release/rajeev-bhatt-the-architect-of-india%E2%80%99s-neurodiversity-and-inclusion-revolution/3164031"
+                                target="_blank" class="news-cards-link">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- News18 Hindi – Divya Kala Mela -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="news-cards">
+                        <img src="https://images.news18.com/ibnkhabar/uploads/2025/12/IMG-20251215-WA0017-2025-12-496c7f571895ef254a6fd91b99506f42-4x3.jpg?impolicy=website&width=640&height=480"
+                            alt="दिव्य कला मेला समावेशन सशक्तिकरण">
+                        <div class="news-cards-content">
+                            <h3 class="news-cards-title">
+                                दिव्य कला मेला: क्षमता, समावेशन और सामुदायिक सशक्तिकरण का जश्न
+                            </h3>
+                            <p class="news-cards-excerpt line-clamp-3">
+                                भारत सरकार के सामाजिक न्याय और अधिकारिता मंत्रालय द्वारा आयोजित दिव्य कला मेला,
+                                दिव्यांगजन कलाकारों और उद्यमियों को आत्मनिर्भरता और समावेशन का मंच प्रदान करता है।
+                            </p>
+                            <a href="https://hindi.news18.com/news/delhi/south-delhi-divya-kala-mela-ability-inclusion-community-empowerment-9968064.html"
+                                target="_blank" class="news-cards-link">और पढ़ें →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 
 
     <div class="footer-section">
@@ -218,7 +465,8 @@
                         <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
                             <h5 class="footer-title">Contacts</h5>
                             <div class="footer-links">
-                                <p class="address">E-17, 2nd Floor, South Extension Part 1, New Delhi, Delhi 110017</p>
+                                <p class="address">E-17, 2nd Floor, South Extension Part 1, New Delhi, Delhi 110017
+                                </p>
                                 <a href="tel:+91 98100 52388" class="footer-link">+91 98100 52388</a>
                                 <a href="tel:+91 88609 00253" class="footer-link">+91 88609 00253</a>
 
@@ -228,7 +476,7 @@
                         </div>
 
                         <!-- Company Column -->
-                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
                             <h5 class="footer-title">Quick Links</h5>
                             <div class="footer-links">
                                 <a href="index.html" class="footer-link">Home</a>
@@ -270,7 +518,24 @@
     <script src="script.js"></script>
 
 
+    <script>
+        new Swiper(".news-swiper", {
+            slidesPerView: 5,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                320: { slidesPerView: 2 },
+                768: { slidesPerView: 3 },
+                1024: { slidesPerView: 5 },
+            },
+        });
 
+
+    </script>
 </body>
 
 </html>
