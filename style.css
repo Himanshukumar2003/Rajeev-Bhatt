@@ -1287,11 +1287,7 @@ height: 300px;
   position: relative;
   height: 100%;
   border-radius: 20px;
-  display: flex;
-  gap: 10px;
-  justify-content: end;
-
-  overflow: hidden;
+ 
 }
 
 .white-card {
@@ -1313,7 +1309,7 @@ height: 300px;
 
 .stat-card p {
   font-size: 16px;
-  max-width: 260px;
+
  color: var(--text-light);
 }
 
@@ -1732,3 +1728,74 @@ height: 100%;
             filter: grayscale(0);
             transform: scale(1.08);
         }
+
+
+
+          .impact-card {
+            background-color: white;
+            border-radius: 10px;
+            height: 100%;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .impact-card:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .icon {
+            font-size: 40px;
+            color: var(--color-primary);
+            /* Blue color */
+        }
+
+        .quote-box {
+            background-color: #EBF4FF;
+            border-left: 4px solid var(--color-primary);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+
+
+.philosophy.card-custom {
+    border: 2px solid var(--color-primary);
+    border-radius: 0.75rem;
+    background-color: #ffffff;
+    transition: 
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Hover effect */
+.philosophy .card-custom:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Card body spacing */
+.philosophy .card-body {
+    padding: 1.5rem;
+}
+
+/* Icon container */
+.philosophy .icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: #ffffff;
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.35);
+}
+
+.communities  .card-custom{
+   
+    border: 3px solid var(--color-primary) !important;
+ border-left: 6px solid var(--color-primary) !important;
+}
