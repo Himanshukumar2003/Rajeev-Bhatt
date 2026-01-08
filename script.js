@@ -2,11 +2,15 @@
 const navSection = document.querySelector(".nav-section");
 
 // Function to handle scroll behavior
+const logo = document.querySelector(".navbar-brand .logo");
+
 window.onscroll = function () {
   if (window.scrollY > 100) {
-    navSection.classList.add("scrolled"); // Add class when scroll is more than 100px
+    navSection.classList.add("scrolled");
+    logo.src = "img/logo/logo2.png";
   } else {
-    navSection.classList.remove("scrolled"); // Remove class when scroll is less than 100px
+    navSection.classList.remove("scrolled");
+    logo.src = "img/logo/logo1.png";
   }
 };
 
