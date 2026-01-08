@@ -461,6 +461,11 @@ p {
     -o-transition: background var(--transition-base);
 } */
 
+.card{
+        transition: all .3s ease;
+        cursor: pointer;
+}
+
 .card-image {
     position: absolute;
     inset: 0;
@@ -667,7 +672,7 @@ p {
 .btn:hover {
     background: var(--color-primary);
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(196, 226, 1, 0.3);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.274);
 }
 
 .btn > svg {
@@ -700,6 +705,7 @@ p {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(255, 255, 255, 0.4);
     background: var(--color-primary);
+    color: white;
 }
 
 
